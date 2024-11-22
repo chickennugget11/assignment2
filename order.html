@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Leckerli+One&display=swap" rel="stylesheet">
+    <!-- Header font -->
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Concert+One&display=swap" rel="stylesheet">
+    <!-- Link css js -->
+    <link href="style/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <title>Shopping</title>
+</head>
+<body id="page3">
+    <!-- Navigation bar with menu -->
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html" class="logo"><img src="./images/logo.png" alt="menu"></a>
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="register.html">Log in/Sign up</a></li>
+                    <li><a href="#">Coming Soon on December</a></li>
+                    <li class="shop_now"><a href="order.html">SHOP NOW</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+    <form class="order" id="shopping" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <h1>Let's have some ice cream</h1>
+        <p>Place your order here</p>
+    
+        <!-- Email, phone -->
+        <br>
+        <label for="email">Email for receipt: </label>
+        <input type="email" name="Email" id="email" required placeholder="john@example.com"><br>
+
+        <br>
+        <label for="num">Phone Number: </label>
+        <input type="text" name="Phone Number" id="num" pattern="\d{8, 12}" required placeholder="00000000"><br>
+        <br>
+        <!-- Delivery or Pickup -->
+        <label>Do you want to receive ice cream...</label>
+        <select title="choice" name="choice" id="choice">
+            <option value="delivery">At home (Delivery)</option>
+            <option value="pickup">At store (Pickup)</option>
+        </select>
+        <br><br>
+        
+        <p>Payment Option:</p>
+        <input type="radio" name="pay" value="pick_up" id="pick_up" onclick="payPickUp()">
+        <label for="pick_up">Pay when Picking Up</label><br>
+        <input type="radio" name="pay" value="online" id="online" onclick="payOnline()">
+        <label for="online">Pay Online</label><br>
+
+        <br><br>
+        <!-- Delivery address -->
+        <fieldset>
+            <legend>Delivery Address</legend>
+            <label for="deliveryAddress">Street Address: </label>
+            <input type="text" name="Delivery Street Address" id="deliveryAddress" placeholder="00 Random Street"><br><br>
+            <label for="deliverySub">Suburb/Town: </label>
+            <input type="text" name="Delivery Suburb/Town" id="deliverySub" placeholder="Random Suburb"><br><br>
+            <label for="billingState">State: </label>
+            <select title="state" name="billingState" id="billingState">
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+            </select><br><br>
+            <label for="billingPostcode">Postcode:</label>
+            <input type="text" id="billingPostcode" placeholder="0000">
+        </fieldset>
+
+        <br>
+        <!-- Favorite Ice Cream -->
+        <label>Favourite Ice Cream </label><br>
+        <br>
+        <input type="checkbox" name="ice_cream" id="ice_cream" checked><label for="ice_cream">Ice Cream</label><br>
+        <input type="checkbox" name="gelato" id="gelato"><label for="gelato">Gelato</label><br>
+        <input type="checkbox" name="softserve" id="softserve"><label for="softserve"> Softserve</label><br>
+        <input type="checkbox" name="yogurt" id="yogurt"><label for="yogurt">Frozen Yogurt</label><br>
+
+        <br><br>
+        <!-- Credit Card -->
+        <fieldset id="pay_online" style="display:none">
+            <legend>Credit Card</legend>
+            <br>
+            <label for="creditCardType">Credit Card Type</label>
+            <select id="creditCardType" name="creditCardType" onchange="updateCardLength()">
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="amex">American Express</option>
+            </select>
+            <br><br>
+            <label for="creditCard">Credit Card Number</label>
+            <input id="creditCard" type="text" name="card_num" required placeholder="0000000000000000" maxlength="16">
+            <br><br>
+            <label>Expiry Date:</label>
+            <input type="text" name="card_date" required placeholder="mm/yy">
+            <br><br>
+            <label>CVV</label>
+            <input type="text" name="cvv" required placeholder="000">
+        </fieldset>
+        
+        <br><br>
+        <label for="other_skills_textarea">If you have something to tell us, just let us know:</label><br><br>
+        <textarea name="other_skills" id="other_skills_textarea" placeholder="Your other skills..."></textarea>
+
+        <br><br>
+        <!-- Submit button -->
+        <input type="submit" value="Book your order" class="button" onsubmit="return checkShopping()">
+        <p id="errorMessage" style="color: rgb(255, 140, 200);"></p>
+    </form>
+
+    <aside class="add">
+        <figure>
+            <a href="index.html#menu">
+                <img src="images/click_menu.png" alt="ice_cream">
+            </a>
+            <figcaption>Click on this gelato if you want to see the menu!</figcaption>
+        </figure>
+        
+        <figure>
+            <a href="features.html">
+                <img src="images/click_fe.png" alt="ice_cream">
+            </a>
+            <figcaption>And click on this gelato to see something special...</figcaption>
+        </figure>
+    </aside>
+
+    <br><br>
+    <footer>
+        <p>@2024 Nguyen Quy Khanh     104189712</p>
+        <p>Contact: quykhanhnq53@gmail.com</p>
+    </footer>
+</body>
+</html>

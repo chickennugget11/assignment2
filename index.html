@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Leckerli+One&display=swap" rel="stylesheet">
+	<!--Header font-->
+	<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Concert+One&display=swap" rel="stylesheet">
+
+    <title>Sweet Life Ice Cream</title>
+    <link href="style/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar with menu-->
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html" class="logo"><img src="./images/logo.png" alt="menu"></a>
+            <ul>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="register.html">Log in/Sign up</a></li>
+                <li><a href="#">Coming Soon on December</a></li>
+                <li class="shop_now"><a href="order.html">SHOP NOW</a></li>
+            </ul>
+            </div>
+        </nav>
+    <br><br>
+    </header>
+
+    <div class="intro">
+        <h1>WELCOME TO SWEET LIFE</h1>
+        <p>Escape the Ordinary: A Frozen Delight Like No Other</p>
+    </div>
+    
+
+    <main>
+        <h2 class="aboutus">About us</h2>
+        <!--3 different columns with 3 spans-->
+        <br>
+        <article id="p1_history">
+            <figure>
+                <img id="history" src="images/since2024.png" alt="History of ice cream">
+                <figcaption>Sweet Life on March 2024</figcaption>
+            </figure>
+            
+            <br>
+            <p>We had a conversation about starting an ice cream shop two years ago. with the intention of combining the freshness of ice cream with mouth-watering flavors. We discovered a fantastic location by September 2023, following the procedure of locating a site and executing a contract. We will open in March 2024 after a protracted building process to guarantee quality and safety.
+                Many clients have welcomed us despite the fact that we were just recently created.</p>
+            <br>
+            <div id="menu">
+                <h2>Our treats</h2>
+                <br>
+                <p>SUMMER IS COMING, it is the ideal time to indulge in delectable ice cream.</p><br>
+                <p>Sweet Life comes in a range of tastes, from delightful sweetness to cool fruit. Visit Sweet Life to taste these amazing flavors!</p><br><br>
+                <button type="button" onclick="showMenu()" class="button">Our menu</button>
+            </div>
+        </article>
+
+
+        <div class="p1_types">
+            
+            <p>We provide a large range of goods in several varieties, including gelato, frozen yogurt, soft serve, 
+                and ice cream cones. The best-selling item among them is boxed ice cream, however ice cream cones are frequently offered to patrons who dine at the restaurant. The goal of every product is to provide diners with a refreshing, cool experience.</p>
+            <img id="p1_types_img" src="images/types.png" alt="Types of Ice Cream">
+        </div>    
+        <br>
+
+    </main>
+    <br><br><br><br><br><br><br><br>
+    <div id="hidden_menu" style="display: none;">
+        <h2>Our Menu</h2>
+        <ul class="icecream">
+            <li><a href="#"><img src="images/vaniice.png" alt="ice cream"></a><p>Vanilla Ice Cream</p></li>
+            <li><a href="#"><img src="images/pinkice.png" alt="ice cream"></a><p>Strawberry Ice Cream</p></li>
+            <li><a href="#"><img src="images/appleice.png" alt="ice cream"></a><p>Green Apple Ice Cream</p></li>
+            <li><a href="#"><img src="images/chocoice.png" alt="ice cream"></a><p>Chocolate Ice Cream</p></li>
+        </ul><br>
+        <ul class="yogurt">
+            <li><a href="#"><img src="images/pinkyo.png" alt="ice cream"></a><p>Strawberry Frozen Yogurt</p></li>
+            <li><a href="#"><img src="images/chocoyo.png" alt="ice cream"></a><p>Chocolate Frozen Yogurt</p></li>
+            <li><a href="#"><img src="images/orangeyo.png" alt="ice cream"></a><p>Orange Frozen Yogurt</p></li>
+        </ul>
+        <ul class="softserver">
+            <li><a href="#"><img src="images/pinksoft.png" alt="ice cream"></a><p>Strawberry Softserver</p></li>
+            <li><a href="#"><img src="images/chocosoft.png" alt="ice cream"></a><p>Chocolate Softserver</p></li>
+            <li><a href="#"><img src="images/vanisoft.png" alt="ice cream"></a><p>Vanilla Softserver</p></li>
+        </ul>
+    </div>
+    <footer>
+        <p>@2024 Nguyen Quy Khanh     104189712</p>
+        <p>Contact: quykhanhnq53@gmail.com</p>
+    </footer>
+</body>
+</html>

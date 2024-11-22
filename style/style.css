@@ -1,0 +1,327 @@
+/*Main elements*/
+#page1 {
+    font-family:'Concert One';
+    color: rgb(107, 70, 40);
+    background-size: cover;
+}   
+h1 {
+    font-family: 'Agbalumo', Arial;
+    font-size: 5em;
+    color: rgb(240, 201, 127);
+    text-shadow: 3px 3px 6px rgb(129, 101, 53);
+    text-align: center;
+}
+h2 {
+    font-family: 'Agbalumo', Arial;
+    color: rgb(240, 201, 127);
+    text-shadow: 3px 3px 6px rgb(129, 101, 53);
+    text-align: center;
+    font-size: 4em;
+    animation: fadeUp 1.5s ease forwards;
+}
+
+header nav img {
+    height: 120px; 
+    margin: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    box-shadow: 8px 8px 8px rgba(255, 163, 163, 0.713);
+    background-color: rgb(250, 153, 187);
+    border-radius: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px; 
+    float: right;
+    justify-content: space-evenly;
+    padding: 1em 0;
+}
+nav ul li {
+    background-size: cover;
+    list-style: none;
+    width: 100%;
+}
+nav ul li a {
+    display: block;
+    font-weight: bold;
+    margin: 10px ;
+    padding: .625em 4.5em;
+    font-family:'Concert One';
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-right: 1px black;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: rgb(254, 109, 160);
+    border-radius: 10px;
+}
+
+.button {
+    clear: both;
+    background-color: rgb(255, 147, 185);
+    text-decoration: none;
+    font-family: 'Concert One', Arial;
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    padding: .625em 3.5em;
+    border-radius: 10px
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(255, 147, 185);
+    clear: both;
+    padding: 0;
+    font-weight: bold;
+    padding: .625em 3.5em;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+footer p {
+    text-align: center;
+    font-family: 'Concert One';
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+
+
+
+/*Page 1 index.html*/
+
+h1 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.aboutus {
+    background-color: rgba(255, 147, 185, 0.388);
+    border-radius: 10px;
+    font-family: 'Agbalumo', Arial;
+    color: rgb(240, 201, 127);
+    text-shadow: 3px 3px 6px rgb(129, 101, 53);
+    text-align: center;
+}
+
+#history {
+    text-align: left;
+    /* text-size-adjust: 5%; */
+    width: 100%;
+    height: max-content;
+    object-fit: cover;
+    box-shadow: 6px 6px rgb(252, 212, 138);
+    transform: translateY(20px);
+    animation: fadeUp 3s ease forwards;
+}
+
+#menu {
+    background-color: rgba(255, 147, 185, 0.388);
+    border-radius: 10px;
+    margin: 3px 3px;
+    transform: translateY(20px);
+    animation: fadeUp 3s ease forwards;
+}
+#p1_types_img {
+    text-align: left;
+    /* text-size-adjust: 5%; */
+    width: 98%;
+    height: max-content;
+    object-fit: cover;
+    box-shadow: 6px 6px rgb(252, 212, 138);
+    transform: translateY(20px);
+    animation: fadeUp 3s ease forwards;
+}
+
+#p1_history,
+.p1_types{
+    font-family:'Concert One';
+    color: rgb(107, 70, 40);
+    background-size: cover;
+    float: left;
+    width: 47%;
+    text-align: justify;
+    margin: 1em 1em 1em 1em;
+    transform: translateY(20px);
+    animation: fadeUp 3s ease forwards;
+}
+.intro p {
+    font-family:'Concert One';
+    color: rgb(107, 70, 40);
+    text-align: center;
+    font-size: 1.5em;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+p {
+    font-family:'Concert One';
+    color: rgb(107, 70, 40);
+    text-align: left;
+    transform: translateY(20px);
+    animation: fadeUp 3s ease forwards;
+}
+
+/*The hiden menu from button*/
+#hidden_menu {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    gap: 60px; 
+    padding: 20px; 
+    list-style: none; 
+}
+#hidden_menu h1 {
+    text-align: center;
+}
+
+#hidden_menu ul {
+    display: flex; 
+    justify-content: space-evenly; 
+    padding: 0; 
+    margin: 0; 
+}
+
+#hidden_menu li {
+    list-style: none;
+    font-family:'Concert One';
+    color: rgb(107, 70, 40);
+}
+
+#hidden_menu .icecream .yogurt img {
+    display: block;
+    width: 150px; 
+    height: 300px; 
+    margin: 0;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+#hidden_menu a:hover img {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px; 
+}
+
+
+
+/*Page 2 register.html*/
+#page2 {
+    font-family:'Concert One';
+    color: rgb(107, 70, 40);
+    background-image: url(../images/login.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+.login {
+    background-color: rgba(250, 206, 206, 0.834);
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/*The mistake window*/
+/* Overlay for dimming the background */
+#scrnOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    visibility: visible;
+}
+
+/* Error window styling */
+#errWin {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 181, 181);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 98, 98, 0.5);
+    z-index: 9999;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Directly style the content of the error messages */
+#errWin div {
+    color: rgb(107, 70, 40); /* Error text color */
+    margin: 0.5em 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Close button styling */
+#errWin a {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#errWin a:hover {
+    background-color: #ff4040; /* Change color on hover */
+}
+
+
+
+/*Page 3 order.html*/
+#page3 {
+    font-family:'Concert One';
+    color: rgb(107, 70, 40);
+    background-color: rgb(248, 231, 209);
+}
+#shopping {
+    width: 54%;
+    padding: 20px 20px;
+    float:left;
+    background-color: rgba(255, 255, 255, 0.716);
+    border-radius: 10px;
+}
+
+.add {
+    height: 80px;
+    margin-left:30px;
+    float: right;
+    padding: 20px;
+}
+.add a:hover img{
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+}
+/*The video */
+video {
+    box-shadow: 20 40px 60px rgba(255, 158, 158, 0.2);
+}

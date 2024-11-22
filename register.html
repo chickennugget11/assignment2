@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Leckerli+One&display=swap" rel="stylesheet">
+	<!--Header font-->
+	<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Concert+One&display=swap" rel="stylesheet">
+    <!--Link css js-->
+    <link href="style/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+    <title>Log In</title>
+</head>
+<body id="page2">
+    <!--Navigation bar with menu-->
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html" class="logo"><img src="./images/logo.png" alt="menu"></a>
+            <ul>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="register.html">Log in/Sign up</a></li>
+                <li><a href="#">Coming Soon on December</a></li>
+                <li class="shop_now"><a href="order.html">SHOP NOW</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <h1>Come with us</h1>
+
+    <form class="login" id="sign_in" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+		    <label for="fname">First Name: </label>
+			<input type="text" name="First Name" id="fname" required placeholder="Khanh"><br>
+			
+            <br>
+			<label for="lname">Last Name: </label>
+			<input type="text" name="Last Name" id="lname" required placeholder="Khanh"><br>
+			
+            <br>
+			<label for="dob">Date of Birth: </label>
+			<input type="text" name="Date of Birth" id="dob" pattern="\d{2}/\d{2}/\d{4}" required placeholder="30/11/2004"><br>
+			<!-- gender -->
+			<br>
+			<fieldset>
+				<legend>Gender: </legend>
+				<input type="radio" name="gender" value="male" id="male">
+				<label for="male"> Male</label><br>
+				<input type="radio" name="gender" value="female" id="fmale">
+				<label for="fmale"> Female</label><br>
+				<input type="radio" name="gender" value="other" id="other">
+				<label for="other"> Other</label><br>
+			</fieldset>
+            <br>
+
+            <label for="email">Email address: </label>
+			<input type="email" name="Email address" id="email" required placeholder="name@example.com"><br>
+
+			<br>
+			<label for="num">Phone Number: </label>
+			<input type="text" name="Phone Number" id="num" pattern="\d{8, 12}" required placeholder="00000000"><br>
+
+            <br>
+            <label for="num">Password: </label>
+			<input type="password" name="password" id="password"><br><br>
+        
+            <label for="num">Retype Password: </label>
+			<input type="password" name="password2" id="password2"><br>
+
+            <br>
+            <fieldset>
+                <legend>Favourite ice cream type(s)</legend><br>
+                <input type="checkbox" name="ice_cream" id="ice_cream" checked><label for="ice_cream"> Ice Cream</label><br>
+                <input type="checkbox" name="gelato" id="gelato"><label for="gelato">Gelato</label><br>
+                <input type="checkbox" name="softserve" id="softserve"><label for="softserve">Softserve</label><br>
+                <input type="checkbox" name="frozen_yogurt" id="frozen_yogurt"><label for="frozen_yogurt">Frozen Yogurt</label><br>
+            </fieldset>
+			<br>
+
+            <input type="submit" value="Sign in" class="button" onclick="return checkRequired()">
+
+            <p id="errorMessage" style="color: rgb(255, 140, 200);"></p>
+
+
+    </form>
+    <br><br>
+    <!--Footer-->
+    <footer>
+        <p>@2024 Nguyen Quy Khanh     104189712</p>
+        <p>Contact: quykhanhnq53@gmail.com</p>
+    </footer>
+</body>
+</html>
